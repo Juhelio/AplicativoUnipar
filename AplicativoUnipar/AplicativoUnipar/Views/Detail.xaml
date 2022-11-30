@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicativoUnipar.Views.Detail">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sobre"
+                     IconImageSource="about.png"
+                     x:Name="Sobre"
+                     Clicked="Sobre_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+
+
+            <StackLayout HeightRequest="1000" Padding="30,40,30,30"  >
+
+                <Image Source="UniparLogo.png"/>
+                <StackLayout HorizontalOptions="Center" Padding="30">
+
+                    <Label Text="O melhor aplicativo de anotações para suas aulas" TextColor="Black" FontSize="25" HorizontalTextAlignment="Center" />
+                    
+                    <Button BackgroundColor="Red" Text="Entrar" TextColor="White" CornerRadius="50" BorderColor="Red"  BorderWidth="2" Margin="80" Clicked="Button_Clicked"/>
+    
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

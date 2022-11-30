@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicativoUnipar.Views.Sobre"
+             Title="Sobre">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" >
+            
+            <StackLayout BackgroundColor="Blue"  >
+                <Label Text="Desenvolvedor: " TextColor="Red" FontSize="Large" VerticalTextAlignment="Start"/>
+            </StackLayout>
+
+            <StackLayout BackgroundColor="HotPink" >
+            <Label Text=" Hélio Junior"
+                   FontSize="Large"
+                   TextColor="Black" 
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Start"
+                   Margin="30, 10"
+                   />
+            </StackLayout>
+                
+            <Label Text=" RA: 09024439 "
+                   FontSize="Large"
+                   TextColor="Red" 
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Start"
+                   Margin="30, 10"
+                   /> <Label Text=" Curso: Analise e Desenvolvimento de Sistemas "
+                   FontSize="Large"
+                   TextColor="Red" 
+                   VerticalOptions="Start" 
+                   HorizontalOptions="Start"
+                   Margin="30, 10"
+                   />
+            
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

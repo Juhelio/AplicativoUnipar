@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicativoUnipar.Views.Master"
+             Title="Master">
+
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+
+            <Frame BackgroundColor="Red" VerticalOptions="Start"  >
+                <StackLayout>
+                    
+                    <Label Text="UniparEAD"  HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                    
+                </StackLayout>
+            </Frame>
+            <StackLayout Padding="5,10">
+                <Button Text="Matérias" TextColor="Red" BorderColor="Red" BackgroundColor="White" BorderWidth="2" CornerRadius="20" Margin="10, 0"/>
+                <Button Text="Mensagens" TextColor="Red" BorderColor="Red" BackgroundColor="White" BorderWidth="2" CornerRadius="20" Margin="10 , 0"/>
+                <Button Text="Notificações" TextColor="Red" BorderColor="Red" BackgroundColor="White" BorderWidth="2" CornerRadius="20" Margin="10, 0"/>
+            </StackLayout>        
+            
+                <Button Text="Sair" VerticalOptions="EndAndExpand" Margin="10,30" TextColor="Red" BorderColor="Red" BackgroundColor="White" BorderWidth="2" CornerRadius="20" Clicked="Button_Clicked"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
