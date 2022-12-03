@@ -9,19 +9,17 @@
         <StackLayout BackgroundColor="White">
 
             <Frame BackgroundColor="Red" VerticalOptions="Start"  >
-                <StackLayout>
+                <StackLayout >
                     
-                    <Label Text="UniparEAD"  HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                    <Label Text="Bem Vindo!" FontAttributes="Bold"  HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
                     
                 </StackLayout>
             </Frame>
-            <StackLayout Padding="5,10">
-                <Button Text="Matérias" TextColor="Red" BorderColor="Red" BackgroundColor="White" BorderWidth="2" CornerRadius="20" Margin="10, 0"/>
-                <Button Text="Mensagens" TextColor="Red" BorderColor="Red" BackgroundColor="White" BorderWidth="2" CornerRadius="20" Margin="10 , 0"/>
-                <Button Text="Notificações" TextColor="Red" BorderColor="Red" BackgroundColor="White" BorderWidth="2" CornerRadius="20" Margin="10, 0"/>
-            </StackLayout>        
-            
-                <Button Text="Sair" VerticalOptions="EndAndExpand" Margin="10,30" TextColor="Red" BorderColor="Red" BackgroundColor="White" BorderWidth="2" CornerRadius="20" Clicked="Button_Clicked"/>
+            <Image Source="UniparLogo.png" Margin="30"/>
+
+            <Label Text="O melhor aplicativo de anotações para suas aulas" TextColor="Black" FontSize="25" HorizontalTextAlignment="Center" />
+
+
         </StackLayout>
 
     </ContentPage.Content>

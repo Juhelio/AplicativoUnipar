@@ -1,30 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AplicativoUnipar.Views.Detail">
+             x:Class="AplicativoUnipar.Views.Detail"
+             Title="Inicio">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Sobre"
                      IconImageSource="about.png"
                      x:Name="Sobre"
                      Clicked="Sobre_Clicked"></ToolbarItem>
     </ContentPage.ToolbarItems>
-    
-    
+
+
     <ContentPage.Content>
-        <StackLayout BackgroundColor="White">
+        <StackLayout BackgroundColor="White" >
 
+            <StackLayout VerticalOptions="StartAndExpand"  HeightRequest="200" Margin="10">
+                <!--Padding="30,0, 30,30"-->
+                
+                <CarouselView x:Name="Imagens" VerticalOptions="StartAndExpand"   IndicatorView="idicador">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding Imagem}"/>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView x:Name="idicador" HorizontalOptions="Center" VerticalOptions="StartAndExpand"   IndicatorColor="DarkRed" SelectedIndicatorColor="Red" IndicatorSize="10"/>
 
-            <StackLayout HeightRequest="1000" Padding="30,40,30,30"  >
-
-                <Image Source="UniparLogo.png"/>
-                <StackLayout HorizontalOptions="Center" Padding="30">
-
-                    <Label Text="O melhor aplicativo de anotações para suas aulas" TextColor="Black" FontSize="25" HorizontalTextAlignment="Center" />
-                    
-                    <Button BackgroundColor="Red" Text="Entrar" TextColor="White" CornerRadius="50" BorderColor="Red"  BorderWidth="2" Margin="80" Clicked="Button_Clicked"/>
-    
-                </StackLayout>
             </StackLayout>
+                
+                <StackLayout  Padding="30">
+                    <Button x:Name="btAnot" Text="Nova Anotaçâo" TextColor="Red" BorderColor="Red" BackgroundColor="White" BorderWidth="2" CornerRadius="20"  Clicked="btAnot_Clicked"/>
+                    <Button x:Name="btLink" Text="Links Oficiais" TextColor="Red" BorderColor="Red" BackgroundColor="White" BorderWidth="2" CornerRadius="20" Clicked="btLink_Clicked" />
+                </StackLayout>
+
 
         </StackLayout>
 

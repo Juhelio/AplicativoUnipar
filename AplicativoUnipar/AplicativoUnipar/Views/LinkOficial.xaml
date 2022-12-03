@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicativoUnipar.Views.LinkOficial"
+             Title="Links Oficiais">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout VerticalOptions="CenterAndExpand">
+
+                <Frame BorderColor="Red" CornerRadius="20" Margin="20, 10">
+                    <Label Text="Unipar EAD"
+               TextColor="Blue"
+               TextDecorations="Underline"
+               HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                      CommandParameter="https://ead.unipar.br/" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+                <Frame BorderColor="Red" CornerRadius="20" Margin="20, 10">
+                    <Label Text="Cursos Unipar"
+               TextColor="Blue"
+               TextDecorations="Underline"
+               HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                      CommandParameter="https://ead.unipar.br/graduacao/" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+                <Frame BorderColor="Red" CornerRadius="20" Margin="20, 10">
+                    <Label Text="Facebook Unipar"
+               TextColor="Blue"
+               TextDecorations="Underline"
+               HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                      CommandParameter="https://pt-br.facebook.com/eadunipar/" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+                <Frame BorderColor="Red" CornerRadius="20" Margin="20, 10">
+                    <Label Text="Instagram Unipar"
+               TextColor="Blue"
+               TextDecorations="Underline"
+               HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                      CommandParameter="https://www.instagram.com/eadunipar/" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

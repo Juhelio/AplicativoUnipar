@@ -14,7 +14,7 @@ namespace AplicativoUnipar
         public MainPage()
         {
             InitializeComponent();
-            this.Master = new Master();
+            this.Master = new  Master();
             this.Detail = new NavigationPage(new Detail());
             App.MasterDetail = this;
         }

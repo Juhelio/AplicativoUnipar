@@ -4,37 +4,21 @@
              x:Class="AplicativoUnipar.Views.Sobre"
              Title="Sobre">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="White" >
-            
-            <StackLayout BackgroundColor="Blue"  >
-                <Label Text="Desenvolvedor: " TextColor="Red" FontSize="Large" VerticalTextAlignment="Start"/>
-            </StackLayout>
+        <StackLayout BackgroundColor="White"  >
 
-            <StackLayout BackgroundColor="HotPink" >
-            <Label Text=" Hélio Junior"
-                   FontSize="Large"
-                   TextColor="Black" 
-                   VerticalOptions="Start" 
-                   HorizontalOptions="Start"
-                   Margin="30, 10"
-                   />
-            </StackLayout>
-                
-            <Label Text=" RA: 09024439 "
-                   FontSize="Large"
-                   TextColor="Red" 
-                   VerticalOptions="Start" 
-                   HorizontalOptions="Start"
-                   Margin="30, 10"
-                   /> <Label Text=" Curso: Analise e Desenvolvimento de Sistemas "
-                   FontSize="Large"
-                   TextColor="Red" 
-                   VerticalOptions="Start" 
-                   HorizontalOptions="Start"
-                   Margin="30, 10"
-                   />
-            
+            <Frame CornerRadius="20" Margin="20" VerticalOptions="CenterAndExpand" BorderColor="Red" HasShadow="True" Padding="10" >
+                <StackLayout Margin="5" >
 
+
+                    <Label Text="Desenvolvedor: Hélio Junior" FontSize="24" FontAttributes="Bold" HorizontalOptions="StartAndExpand" TextColor="Red" VerticalTextAlignment="Start"/>
+
+                    <Label Text=" RA: 09024439 " FontSize="24" FontAttributes="Italic" TextColor="Red" VerticalOptions="Start" HorizontalOptions="StartAndExpand"  />
+
+                    <Label Text=" Curso: Analise e Desenvolvimento de Sistemas "  FontSize="24" FontAttributes="Italic" TextColor="Red" VerticalOptions="Start" HorizontalOptions="StartAndExpand" />
+
+
+                </StackLayout>
+            </Frame>
 
 
         </StackLayout>

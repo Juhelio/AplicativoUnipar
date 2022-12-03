@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicativoUnipar.Views.Anotacoes"
+             Title="Anotações">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="White" >
+            <ScrollView >
+                <StackLayout >
+                    <Label Text="Prepare-se para o futuro!" HorizontalOptions="Center" TextColor="Firebrick" FontAttributes="Bold" FontSize="30"/>
+
+                    <Frame Margin="20,5" Padding="10" x:Name="frameAnot" BorderColor="Transparent" >
+                        <StackLayout x:Name="AnotacoesSalvas">
+
+                        </StackLayout>
+                    </Frame>
+
+                </StackLayout>
+            </ScrollView>
+            <StackLayout  VerticalOptions="EndAndExpand" Margin="10,35" >
+
+
+                <RelativeLayout>
+                <Label Text="Faça suas anotações aqui" FontSize="20" Margin="20,0,0,0" FontAttributes="Bold" TextColor="Firebrick" HorizontalOptions="Start"/>
+                    <ImageButton x:Name="btBold" Source="Negrito.png" HorizontalOptions="StartAndExpand" Margin="20, 0,0,0" Padding="3" BackgroundColor="Transparent" RelativeLayout.XConstraint="250" RelativeLayout.YConstraint="-3"  Clicked="btBold_Clicked"/>
+                    <ImageButton x:Name="btItalic" Source="Italico.png" HorizontalOptions="StartAndExpand" Margin="20, 0,0,0" Padding="3" BackgroundColor="Transparent" RelativeLayout.XConstraint="290" RelativeLayout.YConstraint="-3" Clicked="btItalic_Clicked" />
+
+                </RelativeLayout>
+
+
+                <Picker x:Name="PickerMaterias" Margin="20,2" BackgroundColor="Firebrick" Title="Selecione uma Matéria"  TitleColor="White"/>
+                <DatePicker x:Name="dataAnotacao" Margin="20, 2" BackgroundColor="Firebrick" />
+                <Entry x:Name="campoAnotacao" BackgroundColor="Firebrick" Margin="20, 2" TextColor="White" TextTransform="Default" />
+                <Button x:Name="AddLista" BackgroundColor="Red" VerticalOptions="EndAndExpand" Text="Adicionar anotação" TextColor="White" Clicked="AddLista_Clicked" />
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
